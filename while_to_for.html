@@ -1,0 +1,39 @@
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+//  **** Como se estrutura um while *** (Para fazer a taboada do 7 por exemplo)
+
+  //  var multiplicador = 1;
+  //  while (multiplicador <= 10){ 
+
+  //     mostra(7 * multiplicador);
+  //     multiplicador = multiplicador + 1;
+  // }  
+  // pulaLinha();
+  // mostra("Fim") 
+
+//  **** Como é alterado para for ***  (for precisa dos 3 parâmetros apresentados nesta ordem) e a ação a ser apresentada;
+
+    for(var multiplicador = 1; multiplicador <= 10; multiplicador++) {
+        mostra(7 * multiplicador);
+    }
+    pulaLinha();
+    mostra("Fim")
+
+// Pode-se utilizar o pós incremento da variável quando for necessário somar (1)
+// exemplo: No lugar de multiplicador = multiplicador +1 
+// Usa-se: multiplicador++
+
+
+var pontosNaSemana = 400+110+100+1700+700
+mostra(pontosNaSemana);
+mostra("média da semana " + pontosNaSemana/5);
+
+</script>

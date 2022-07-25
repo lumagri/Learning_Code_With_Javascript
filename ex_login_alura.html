@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+<script>
+
+    var loginCadastrado = "alura";
+    var senhaCadastrada = "alura321";
+    var contador = 2
+
+    var loginInformado = prompt("Informe seu login");
+    var senhaInformada = prompt("Informe sua senha");
+
+    if( loginCadastrado == loginInformado && senhaCadastrada == senhaInformada ) {
+
+        alert("Bem-vindo ao sistema " + loginInformado);
+    } else {
+        alert("Login inválido. Tente novamente");
+    }
+
+    while (senhaInformada!= senhaCadastrada && contador <= 3){
+        var loginInformado = prompt("Informe seu login");
+        var senhaInformada = prompt("Informe sua senha");
+        alert("Esta é a sua " + contador + " tentativa"); 
+        contador = contador + 1
+    }
+    alert("Sua senha foi cancelada");
+
+</script>
