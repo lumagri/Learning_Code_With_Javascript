@@ -1,0 +1,33 @@
+<!-- *** Criando campo para escrita e botões em html *** -->
+
+<input/>
+<button>Compare com o meu segredo</button>
+
+ <!-- É possível fazer com que o JavaScript acesse o campo de descrição e interaja com o botão dentro da área do html através da tag document.querySelector.  -->
+
+<script>
+    var segredo = Math.round(Math.random() * 10);
+
+    var input = document.querySelector("input");
+        input.focus();
+
+    function verifica() {
+
+        if(input.value == segredo) {
+
+            alert("Você ACERTOU!");
+        } else {
+
+            alert("Você ERROU!!!!!!!!");
+        }
+
+        input.value = "";
+        input.focus();
+
+    }
+
+    var button = document.querySelector("button");
+
+    button.onclick = verifica;
+
+</script>
